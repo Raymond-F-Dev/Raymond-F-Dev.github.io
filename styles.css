@@ -1,0 +1,548 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+* {
+    border: 0;
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    background: black;
+}
+
+.navbar .navbar-items span a:hover {
+    cursor: pointer;
+    color: gold;
+    transform: scale(1.5);
+    border-radius: 50px;
+    text-shadow: 0 0 20px #fff, 0 0 30px gold, 0 0 40px gold, 0 0 50px gold, 0 0 60px gold, 0 0 70px gold, 0 0 80px gold;
+    
+}
+
+.navbar {   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: 0%;
+    height: 80px;
+    width: 100%;
+    position:fixed;
+    z-index: 3000;
+    top: 0;
+}
+
+.navbar .logo {
+    font-size: 3rem;
+    color: white;
+    padding: 0rem 2rem;
+    background: 0%;
+
+}
+
+.navbar .navbar-items span a {
+    padding: 0rem 2rem;
+    color: white;
+    text-decoration: none;
+    transition: 1s;
+    display: inline-block;
+    background: 0%;
+
+}
+
+.navbar .navbar-items span {
+    background: 0%;
+}
+
+.navbar .navbar-items {
+    background: 0%;
+}
+
+.body1container {
+    height:100vh;
+    width:100%;
+    background:black;
+    margin-top:80px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.body2 {
+    height:100vh;
+    width:100%;
+    top: 80px;
+    background: radial-gradient(100vw 80vh at center bottom, orange, black);
+    background-repeat: no-repeat;
+    animation: 
+        theSun 3s infinite alternate;
+}
+
+#body3container {
+    scroll-margin-top: 80px;
+}
+
+@keyframes theSun {
+    from {
+        opacity: 1;
+
+    }
+
+    to {
+        opacity: .8;
+    }
+}
+
+#body {
+    scroll-margin-top: 80px;
+}
+#body2 {
+    scroll-margin-top: 80px;
+}
+#body3container {
+    scroll-margin-top: 80px;
+}
+#body4 {
+    scroll-margin-top: 80px;
+}
+
+@media screen and (max-width: 950px) {
+    .navbar .navbar-items span a{
+        display: none;
+    
+    }
+}
+
+.bodyleft h1 {
+    color: white;
+    position: relative;
+    top: 50%;  
+    width: 8em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-80px); 
+    animation: 
+        typing 1.5s steps(18, end),
+        blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 8em }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+  }
+
+  .body1container span {
+    position: absolute;
+    top:50%;
+    left:50%;
+    overflow: hidden;
+    width: 4px;
+    height: 4px;
+    background: gold;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.1),0 0 0 8px rgba(255,255,255,0.1),0 0 20px rgba(255,255,255,0.1);
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(315deg) translateX(0);
+        opacity: 1;
+    }
+    70%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: rotate(315deg) translateX(-1000px);
+        opacity: 0;
+    }
+}
+
+
+.nav span:nth-child(1){
+    top: 0;
+    right: 0;
+    left: initial;
+    animation-delay: 0s;
+    animation-duration: 1s;
+}
+.body1container span:nth-child(2){
+    top: 0;
+    right: 80px;
+    left: initial;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+}
+.body1container span:nth-child(3){
+    top: 80;
+    right: 0px;
+    left: initial;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+}
+.body1container span:nth-child(4){
+    top: 0;
+    right: 180px;
+    left: initial;
+    animation-delay: 0.6s;
+    animation-duration: 1.5s;
+}
+.body1container span:nth-child(5){
+    top: 0;
+    right: 400px;
+    left: initial;
+    animation-delay: 0.8s;
+    animation-duration: 2.5s;
+}
+.body1container span:nth-child(6){
+    top: 0;
+    right: 600px;
+    left: initial;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+.body1container span:nth-child(7){
+    top: 300px;
+    right: 0px;
+    left: initial;
+    animation-delay: 1.2s;
+    animation-duration: 1.75s;
+}
+.body1container span:nth-child(8){
+    top: 0px;
+    right: 700px;
+    left: initial;
+    animation-delay: 1.4s;
+    animation-duration: 1.25s;
+}
+.body1container span:nth-child(9){
+    top: 0px;
+    right: 1000px;
+    left: initial;
+    animation-delay: 0.75s;
+    animation-duration: 2.25s;
+}
+.body1container span:nth-child(10){
+    top: 0px;
+    right: 450px;
+    left: initial;
+    animation-delay: 2.75s;
+    animation-duration: 2.75s;
+}
+
+.body1container span:nth-child(11){
+    top: 0;
+    right: 1000px;
+    left: initial;
+    animation-delay: 0s;
+    animation-duration: 1s;
+}
+.body1container span:nth-child(12){
+    top: 0;
+    right: 1080px;
+    left: initial;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+}
+.body1container span:nth-child(13){
+    top: 80;
+    right: 1000px;
+    left: initial;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+}
+.body1container span:nth-child(14){
+    top: 0;
+    right: 1180px;
+    left: initial;
+    animation-delay: 0.6s;
+    animation-duration: 1.5s;
+}
+.body1container span:nth-child(15){
+    top: 0;
+    right: 1400px;
+    left: initial;
+    animation-delay: 0.8s;
+    animation-duration: 2.5s;
+}
+.body1container span:nth-child(16){
+    top: 0;
+    right: 1600px;
+    left: initial;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+.body1container span:nth-child(17){
+    top: 300px;
+    right: 1110px;
+    left: initial;
+    animation-delay: 1.2s;
+    animation-duration: 1.75s;
+}
+.body1container span:nth-child(18){
+    top: 0px;
+    right: 1700px;
+    left: initial;
+    animation-delay: 1.4s;
+    animation-duration: 1.25s;
+}
+.body1container span:nth-child(19){
+    top: 0px;
+    right: 1000px;
+    left: initial;
+    animation-delay: 0.75s;
+    animation-duration: 2.25s;
+}
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px gold, 0 0 40px gold, 0 0 50px gold, 0 0 60px gold, 0 0 70px gold, 0 0 80px gold;
+    }
+  }
+
+  /*
+  .mover {
+    width: 50px;
+    height: 50px;
+    background: red;
+    position: absolute;
+    left: var(--mouse-x);
+    top: var(--mouse-y);
+    cursor: none;
+  } */
+
+  .bodyleft2 {
+    color: white;
+    position: relative;
+    top: 50%;  
+    width: 22em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-80px); 
+    animation: 
+        typing2 2.5s steps(35, end),
+        blink-caret2 .5s step-end infinite;
+
+  }
+
+  @keyframes typing2 {
+    from { width: 0 }
+    to { width: 22em }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret2 {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+  }
+
+/*
+  .body3container span {
+    color: black;
+    opacity: 1;
+    width: 100vw;
+    height: 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.1),0 0 0 8px rgba(255,255,255,0.1),0 0 20px rgba(255,255,255,0.1);
+    animation: 
+        glitch 10s infinite reverse;
+}*/
+
+/*
+@keyframes glitch {
+    0%{background-color: plum;}
+    10%{background-color: darkmagenta;}
+    20%{background-color: red;}
+    30%{background-color: deeppink;}
+    40%{background-color: purple;}
+    50%{background-color: violet;}
+    60%{background-color: blueviolet;}
+    70%{background-color: indigo;}
+    80%{background-color: darkmagenta;}
+    90%{background-color: magenta;}
+    100%{background-color: darkorchid;}
+}*/
+
+.body3 {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(-45deg,#ff0099, #6303B1);
+
+  }
+
+.body3 span{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 300px;
+    background-color: purple;
+    animation: 
+        bubbleSpin 4s infinite;
+}  
+
+
+@keyframes bubbleSpin {
+    0% {transform: translateY(0px) ;}
+    100% {transform: translateY(-400px); opacity: 0; }
+
+}
+
+.body3 span:nth-child(1){
+    animation-delay: 1s;
+    right: 800px;
+    top: 310vh;
+}
+
+.body3 span:nth-child(2){
+    animation-delay: 2s;
+    right: 600px;
+    top: 310vh;
+}
+
+.body3 span:nth-child(3){
+    animation-delay: 3s;
+    right: 900px;
+    top: 310vh;
+    width: 100px;
+    height: 100px;
+}
+.body3 span:nth-child(4){
+    animation-delay: 4s;
+    right: 400px;
+    top: 320vh;
+    ;
+
+}
+.body3 span:nth-child(5){
+    animation-delay: .5s;
+    right: 100px;
+    top: 310vh;
+}
+
+.body3 span:nth-child(6){
+    animation-delay: 3.2s;
+    right: 0px;
+    top: 310vh;
+}
+
+.body3 span:nth-child(7){
+    animation-delay: 2.5s;
+    right: 250px;
+    top: 310vh;
+}
+.body3 span:nth-child(8){
+    animation-delay: 4.5s;
+    right: 400px;
+    top: 320vh;
+
+}
+.body3 span:nth-child(9){
+    animation-delay: .5s;
+    right: 100px;
+    top: 310vh;
+}
+
+.body3 span:nth-child(10){
+    animation-delay: 3.2s;
+    right: 1400px;
+    top: 310vh;
+}
+
+.body3 span:nth-child(11){
+    animation-delay: 2.5s;
+    right: 1200px;
+    top: 310vh;
+}
+.body3 span:nth-child(12){
+    animation-delay: 4.5s;
+    right: 1000px;
+    top: 320vh;
+
+}
+
+
+
+  .body4 {
+    display:flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, #6303B1, #ff0099);
+    overflow: hidden;
+    position: absolute;
+    border-style: double;
+    border-top: 22px solid black;
+  }
+
+  .body4top {
+    height: 10px;
+    width: 100vw;
+    background-color: black;
+ 
+
+  }
+
+  .body4one {
+    transform: skew(-40deg);
+    rotate:(30deg);
+    background-color: black;
+    width: 33vw;
+    transition: 1s;
+    overflow: hidden;
+    right: 1500px;
+  }
+  .body4two {
+    transform: skew(-40deg);
+    rotate:(30deg);
+    background-color: orange;
+
+    width: 33vw;
+    overflow: hidden;
+    transition: 1s;
+
+
+  }
+  .body4three {
+    transform: skew(-40deg);
+    rotate:(30deg);
+    background-color: black;
+ 
+    width: 33vw;
+    overflow: hidden;
+    transition: 1s;
+  }
+
+  /*
+  .body4one:hover {
+    width: 90%;
+    
+  }
+  .body4two:hover {
+    width: 90%;
+  }
+  .body4three:hover {
+    width: 90%;
+  }*/

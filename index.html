@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel='stylesheet' href='styles.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+</head>
+<body>
+    <container id="wholeBody" class = whole_body scroll="no" overflow="hidden">
+        
+        <nav id="navbar" class = navbar>
+            <div class = logo>
+                Raymond Floyd
+            </div>
+            <div class = navbar-items>
+                <span>
+                    <a id="home" onclick="scrollElement('body'); changeText()">// home</a>
+                </span>
+                <span>
+                    <a id = project onclick="scrollElement('body2')">// resume</a>
+                </span>
+                <span>
+                    <a id= 'resume' onclick="scrollElement('body3')">// projects</a>
+                </span>
+                <span>
+                    <a id = about onclick="scrollElement('body4')">// about</a>
+                </span>
+            </div>
+        </nav>
+
+        <section id=body class="body">
+            <div id="body1container" class="body1container">    
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <div id="bodyleft" class="bodyleft">
+                    <h1 id="texttext">Welcome to Me.</h1>
+                </div>
+                
+                
+            </div>
+        </section>
+        <section id="body2" class="body2">
+            <span id="body2container" class="body2container">
+
+            </span>
+        </section>
+        
+
+
+        <section id="body3" class="body3">
+            <div id="body3top" class="body3top">
+                
+            </div>
+            <div id="body3container" class="body3container">
+                a
+            </div>
+            
+            <span></span> 
+            <span></span>
+            <span></span>
+            <span></span>
+            
+            <span></span> 
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <span style="display: none;"></span>
+            <span style="display: none;"></span>
+        </section>
+
+
+        
+        <section id="body4" class="body4">
+           
+            <div id="body4one" class="body4one" onmouseover="expand('body4one')" onmouseout="shrink('body4one')">
+                aa
+            </div>
+            <div id="body4two" class="body4two" onmouseover="expand('body4two')" onmouseout="shrink('body4two')">
+                   a
+            </div>
+            <div id="body4three" class="body4three" onmouseover="expand('body4three')" onmouseout="shrink('body4three')">
+                 a  
+            </div>
+        </section>
+
+
+        
+    </container>
+
+    <script src='main.js'></script>
+</body>
+</html>
