@@ -411,20 +411,20 @@
 }
 
 .body3 span:nth-child(1){
-    animation-delay: 1s;
+    animation-delay: .1s;
     right: 800px;
-    top: 310vh;
+    top: 330vh;
 }
 
 .body3 span:nth-child(2){
-    animation-delay: 2s;
+    animation-delay: 3.1s;
     right: 600px;
     top: 310vh;
 }
 
 .body3 span:nth-child(3){
-    animation-delay: 3s;
-    right: 900px;
+    animation-delay: .4s;
+    right: 1500px;
     top: 310vh;
     width: 100px;
     height: 100px;
@@ -433,12 +433,13 @@
     animation-delay: 4s;
     right: 400px;
     top: 320vh;
-    ;
+    width: 150px;
+    height: 150px;
 
 }
 .body3 span:nth-child(5){
     animation-delay: .5s;
-    right: 100px;
+    right: 1500px;
     top: 310vh;
 }
 
@@ -454,7 +455,7 @@
     top: 310vh;
 }
 .body3 span:nth-child(8){
-    animation-delay: 4.5s;
+    animation-delay: 2.5s;
     right: 400px;
     top: 320vh;
 
@@ -466,13 +467,13 @@
 }
 
 .body3 span:nth-child(10){
-    animation-delay: 3.2s;
+    animation-delay: 1.2s;
     right: 1400px;
     top: 310vh;
 }
 
 .body3 span:nth-child(11){
-    animation-delay: 2.5s;
+    animation-delay: .5s;
     right: 1200px;
     top: 310vh;
 }
@@ -483,56 +484,85 @@
 
 }
 
-
-
-  .body4 {
+.body4 {
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
     height: 100%;
     background-image: linear-gradient(45deg, #6303B1, #ff0099);
     overflow: hidden;
     position: absolute;
-    border-style: double;
     border-top: 22px solid black;
+    
   }
 
   .body4top {
     height: 10px;
     width: 100vw;
     background-color: black;
- 
 
   }
 
   .body4one {
-    transform: skew(-40deg);
+    transform: skew(-30deg);
     rotate:(30deg);
     background-color: black;
     width: 33vw;
     transition: 1s;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: black;
     overflow: hidden;
-    right: 1500px;
+
+    
   }
   .body4two {
-    transform: skew(-40deg);
+    transform: skew(-30deg);
     rotate:(30deg);
     background-color: orange;
-
     width: 33vw;
     overflow: hidden;
     transition: 1s;
-
-
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: black;
   }
+
+  .body4two p {
+    color: black;
+    background-color: orange;
+}
+
+.body4three p {
+    color: orange;
+    background-color: black;
+}
+.body4one p {
+    color: orange;
+    background-color: black;
+}
+
+
   .body4three {
-    transform: skew(-40deg);
+    transform: skew(-30deg);
     rotate:(30deg);
     background-color: black;
- 
     width: 33vw;
     overflow: hidden;
     transition: 1s;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: black;
+
   }
 
   /*
