@@ -113,6 +113,65 @@
     }
 }
 
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0rem calc((1300 - 130vw) / 2);
+    background: transparent;
+    position: absolute;
+    top: 235vh;
+    left: 0%;
+    width: 100%;
+    
+}
+
+.about-container div {
+    height: 50vh;
+    width: 20vw;
+    color: white;
+    background: transparent;
+    border: 6px double hotpink;
+    border-style: 4px double hotpink;
+    
+    display: block;
+}
+
+.about-container .card1 {
+    transition: 1s;
+    animation: flipflop 1s;
+}
+
+@keyframes flipflop {
+    0% {
+
+    }  
+    
+    50% {
+    padding:30;
+    margin: +180;
+    transform: rotate(90deg);
+    transform: skewx(90deg);
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+    display: inline-block;
+    position: relative;
+    } 
+    100%{
+        margin: 0;
+        padding: 0px;
+        transform: rotate(180deg);
+        transform: skewx(180deg);
+        height: 50vh;
+        width: 20vw;
+        opacity: 1;
+    }
+
+
+ 
+}
+
 .bodyleft h1 {
     color: white;
     position: relative;
@@ -149,7 +208,7 @@
     overflow: hidden;
     width: 4px;
     height: 4px;
-    background: gold;
+    background: linear-gradient(-45deg, gold, red);
     border-radius: 50%;
     box-shadow: 0 0 0 4px rgba(255,255,255,0.1),0 0 0 8px rgba(255,255,255,0.1),0 0 20px rgba(255,255,255,0.1);
     animation: animate 3s linear infinite;
@@ -506,7 +565,7 @@
   .body4one {
     transform: skew(-30deg);
     rotate:(30deg);
-    background-color: black;
+    background: linear-gradient(-45deg, indigo, purple);
     width: 33vw;
     transition: 1s;
     text-align: center;
@@ -522,7 +581,7 @@
   .body4two {
     transform: skew(-30deg);
     rotate:(30deg);
-    background-color: orange;
+    background: linear-gradient(-45deg, darkmagenta, indigo);
     width: 33vw;
     overflow: hidden;
     transition: 1s;
@@ -552,7 +611,7 @@
   .body4three {
     transform: skew(-30deg);
     rotate:(30deg);
-    background-color: black;
+    background: linear-gradient(-45deg, hotpink, indigo);
     width: 33vw;
     overflow: hidden;
     transition: 1s;

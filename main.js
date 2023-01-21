@@ -80,3 +80,41 @@ function shrink(id){
     
 }
 
+function flipflop(id){
+    element = document.getElementById(id);
+    element.style.animation = 'flipflop 1s';
+    var element = document.getElementById(id);
+    
+
+    // reset the transition by...
+        
+      element.preventDefault;
+      
+      // -> removing the class
+      element.classList.remove('card1');
+      
+      // -> triggering reflow /* The actual magic */
+      // without this it wouldn't work. Try uncommenting the line and the transition won't be retriggered.
+      // This was, from the original tutorial, will no work in strict mode. Thanks Felis Phasma! The next uncommented line is the fix.
+      // element.offsetWidth = element.offsetWidth;
+      
+      void element.offsetWidth;
+      
+      // -> and re-adding the class
+      element.classList.add('card1');
+
+}
+// reset the transition by...
+/*
+function reset(id) {
+  element.getElementById(id).preventDefault;
+  
+  // -> removing the class
+  element.classList.remove(id);
+  
+  void element.offsetWidth;
+  
+  // -> and re-adding the class
+  element.classList.add(id);
+}
+ */

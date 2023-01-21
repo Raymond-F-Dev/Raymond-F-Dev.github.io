@@ -71,9 +71,15 @@
                 
             </div>
             <div id="body3container" class="body3container">
-                a
+               
             </div>
             <div>asdasd</div>
+            <div class="about-container">
+                
+                <div id="card1" class="card1" onclick="flipflop('card1')">click me</div>
+                <div id="card2" onclick="flipflop('card2')">click me</div>
+                <div id="card3" onclick="flipflop('card3')" >click me</div>
+            </div>
             <span></span> 
             <span></span>
             <span></span>
@@ -93,13 +99,13 @@
         <section id="body4" class="body4">
            
             <div id="body4one" class="body4one" onmouseover="expand('body4one')" onmouseout="shrink('body4one')">
-                <p>Project 1</p>
+                <a href = 'https://github.com/Raymond-F-Dev/Simulated-Blackjack-Proj'>Project 1</a>
             </div>
             <div id="body4two" class="body4two" onmouseover="expand('body4two')" onmouseout="shrink('body4two')">
                 <p>Project 2</p>
             </div>
             <div id="body4three" class="body4three" onmouseover="expand('body4three')" onmouseout="shrink('body4three')">
-                <p>Project 3</p>
+                <p>Project 3</p> 
             </div>
         </section>
 
@@ -107,6 +113,13 @@
         
     </container>
 
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Load our React component. -->
+  <script src="like_button.js"></script>
+
     <script src='main.js'></script>
+    <script src="'https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 </body>
 </html>
